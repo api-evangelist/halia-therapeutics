@@ -64,5 +64,15 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Halia Therapeutics is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Halia Therapeutics, Inc. is a privately held clinical-stage biopharmaceutical company headquartered
+in Lehi, Utah, founded in 2017. It develops small-molecule therapies targeting the immune system's
+inflammatory response — allosteric NEK7/NLRP3 inflammasome inhibition and LRRK2 inhibition — for
+hematologic, metabolic and neurodegenerative disease. Its lead program, ofirnoflast (HT-6184), holds
+FDA Fast Track and Orphan Drug designation for lower-risk myelodysplastic syndromes.
+
+**No API surface.** Halia is a drug developer, not a software vendor. A full contract-discovery pass
+on 2026-08-22 found no OpenAPI, GraphQL, MCP, A2A or `.well-known` document, no developer program,
+and no GitHub organization. See `contract-discovery.yml` for every URL probed and the status it
+returned.
+
+- https://haliatx.com/

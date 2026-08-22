@@ -1,8 +1,19 @@
 aid: halia-therapeutics
 name: Halia Therapeutics
-description: 'Halia Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Halia Therapeutics, Inc. is a privately held clinical-stage biopharmaceutical
+  company headquartered in Lehi, Utah, founded in 2017 and led by CEO Dr. David Bearss. Halia
+  discovers and develops small-molecule therapies that target the immune system''s inflammatory
+  response — chiefly allosteric NEK7/NLRP3 inflammasome inhibition and LRRK2 inhibition — to
+  resolve the chronic inflammation that drives hematologic, metabolic and neurodegenerative
+  disease. Its lead clinical program, ofirnoflast (HT-6184), holds FDA Fast Track and Orphan Drug
+  designation for lower-risk myelodysplastic syndromes; HT-4253, an LRRK2 inhibitor aimed at
+  neuroinflammation and Alzheimer''s prevention in APOE4 carriers, has completed a first-in-human
+  Phase 1 study. The company also markets a "genetic resilience" research platform (GENMOR) built
+  on family-cohort genomics. Halia is a drug developer, not a software vendor: it publishes a
+  Webflow corporate site with pipeline, platform and press pages, and no developer program,
+  public API, SDK or machine-readable specification of any kind.'
 url: https://raw.githubusercontent.com/api-evangelist/halia-therapeutics/refs/heads/main/apis.yml
+image: https://cdn.prod.website-files.com/688b451b45ceaa63f2f18f66/688cae0819292502275bf280_Company%20Logo.svg
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +23,15 @@ created: '2026-08-22'
 modified: '2026-08-22'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Life Sciences
+- Drug Discovery
+- Clinical Trials
+- Immunology
+- Neuroscience
+- Genomics
+- Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +40,39 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://haliatx.com/
+- type: About
+  url: https://haliatx.com/about
+- type: Blog
+  url: https://haliatx.com/news
+- type: Support
+  url: https://haliatx.com/contact
+- type: PrivacyPolicy
+  url: https://haliatx.com/privacy-policy
+- type: DomainSecurity
+  url: security/halia-therapeutics-domain-security.yml
+x-enrichment:
+  date: '2026-08-22'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Halia Therapeutics is a clinical-stage biopharmaceutical developer whose only public web
+    property is a Webflow marketing site; every OpenAPI/GraphQL/MCP/A2A discovery path on
+    haliatx.com returns a 404 HTML page, no api/dev/docs/portal subdomain resolves in DNS, and
+    no GitHub organization exists under haliatx or halia-therapeutics.
+  evidence:
+  - url: https://haliatx.com/openapi.json
+    status: 404
+  - url: https://haliatx.com/.well-known/api-catalog
+    status: 404
+  - url: https://haliatx.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api.github.com/orgs/haliatx
+    status: 404
+  - url: https://haliatx.com/
+    status: 200
+  checked: '2026-08-22'

@@ -1,0 +1,45 @@
+generated: '2026-08-22'
+method: probed
+source: live HTTPS probes of haliatx.com, DNS probes of candidate API subdomains, GitHub org lookup
+summary: >-
+  No machine-readable API contract of any kind is published by Halia Therapeutics. The company
+  is a clinical-stage biopharmaceutical developer; its only public web property is a Webflow
+  marketing site (haliatx.com) covering pipeline, platform, news and contact. Every OpenAPI,
+  Swagger, GraphQL, MCP and A2A discovery path probed returned 404 with a Webflow HTML body,
+  no api/dev/docs/portal subdomain resolves in DNS, and no GitHub organization exists under
+  either "haliatx" or "halia-therapeutics".
+hosts_probed:
+- haliatx.com
+rest_openapi:
+- {url: 'https://haliatx.com/openapi.json', status: 404, body: html}
+- {url: 'https://haliatx.com/openapi.yaml', status: 404, body: html}
+- {url: 'https://haliatx.com/swagger.json', status: 404, body: html}
+- {url: 'https://haliatx.com/v1/openapi.json', status: 404, body: html}
+- {url: 'https://haliatx.com/api-docs', status: 404, body: html}
+- {url: 'https://haliatx.com/docs', status: 404, body: html}
+- {url: 'https://haliatx.com/redoc', status: 404, body: html}
+- {url: 'https://haliatx.com/api', status: 404, body: html}
+- {url: 'https://haliatx.com/apis.json', status: 404, body: html}
+- {url: 'https://haliatx.com/wp-json/wp/v2', status: 404, body: html}
+graphql:
+- {url: 'https://haliatx.com/graphql', status: 404, body: html}
+mcp:
+- note: No MCP endpoint advertised anywhere on the site; mcp.haliatx.com does not resolve.
+a2a:
+- {url: 'https://haliatx.com/.well-known/agent-card.json', status: 404, body: html}
+- {url: 'https://haliatx.com/.well-known/agent.json', status: 404, body: html}
+dns_subdomains:
+- {host: api.haliatx.com, result: NXDOMAIN}
+- {host: dev.haliatx.com, result: NXDOMAIN}
+- {host: developer.haliatx.com, result: NXDOMAIN}
+- {host: docs.haliatx.com, result: NXDOMAIN}
+- {host: portal.haliatx.com, result: NXDOMAIN}
+- {host: app.haliatx.com, result: NXDOMAIN}
+- {host: data.haliatx.com, result: NXDOMAIN}
+- {host: mcp.haliatx.com, result: NXDOMAIN}
+- {host: agent.haliatx.com, result: NXDOMAIN}
+source_control:
+- {url: 'https://api.github.com/orgs/haliatx', status: 404}
+- {url: 'https://api.github.com/orgs/halia-therapeutics', status: 404}
+- {url: 'https://api.github.com/search/users?q=halia+therapeutics', status: 200, total_count: 0}
+verdict: no-published-contract
