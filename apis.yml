@@ -13,6 +13,17 @@ description: 'Halia Therapeutics, Inc. is a privately held clinical-stage biopha
   Webflow corporate site with pipeline, platform and press pages, and no developer program,
   public API, SDK or machine-readable specification of any kind.'
 url: https://raw.githubusercontent.com/api-evangelist/halia-therapeutics/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/688b451b45ceaa63f2f18f66/688cae0819292502275bf280_Company%20Logo.svg
 x-type: company
 x-source: harvest:secondary-market
