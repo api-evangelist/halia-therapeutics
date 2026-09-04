@@ -24,6 +24,18 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://cdn.prod.website-files.com/688b451b45ceaa63f2f18f66/688cae0819292502275bf280_Company%20Logo.svg
 x-type: company
 x-source: harvest:secondary-market
